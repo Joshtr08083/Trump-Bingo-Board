@@ -1,0 +1,50 @@
+:root {
+    --bgcol: #FFEBCD;
+    --bgdark: #8d816e;
+    --textcol: #14131d;
+}
+
+body {background-color: var(--bgcol, #000000);}
+
+.header {
+    color: var(--textcol, #000000);
+}
+
+.text {
+    color: var(--textcol, #000000);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+    outline: none;
+    background-color: #00000000;
+    color: var(--textcol, #000000);
+    
+    padding: 1.5vh 4vh;
+    border-radius: 15px;
+    border: 2px solid var(--textcol, #000000);
+    font-size: 0.8em;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.button:hover {
+    background-color: var(--bgdark, #000000);
+}
+
+.input {
+    outline: none;
+    background-color: var(--bgcol, #000000);;
+    color: var(--textcol, #000000);
+    
+    padding: 1.5vh 4vh;
+    border-radius: 15px;
+    border: 2px solid var(--textcol, #000000);
+    font-size: 0.8em;
+
+    cursor: pointer;
+
+    user-select: none;
+}   

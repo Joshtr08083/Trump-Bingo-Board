@@ -1,0 +1,189 @@
+.loginBox {
+    width: 50%;
+    padding-bottom: 2%;
+    background-color: hsla(40, 10%, 43%, 0.486);
+    margin: 0 auto;
+    border-radius: 40px;
+    border: 2px solid #22211f;
+
+    box-shadow: 20px 20px 0px #2c29259a;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+
+/* Submit button */
+#login {
+
+    background-color: #b4ad9f;
+    color: #4d4942;
+
+    padding: 1.5vh 8vh;
+    position: relative;
+    font-size: 1em;
+
+    margin: 5vh auto;
+}
+#submit {
+
+    background-color: #b4ad9f;
+    color: #4d4942;
+
+    padding: 1.5vh 8vh;
+    position: relative;
+    font-size: 1em;
+
+    margin: 5vh auto;
+}
+
+#submit:hover {
+
+    background-color: #7a756b;
+    color: #c2bcab;
+}
+
+#login:hover {
+    background-color: #7a756b;
+    color: #c2bcab;
+}
+
+/* Input field */
+#username {
+    cursor: text;
+    background-color: #b4ad9f;
+    color: var(--textcol);
+    width: 50%;
+    margin: auto;
+    padding: 1.5vh 1vw;
+}
+#password {
+    cursor: text;
+    background-color: #b4ad9f;
+    color: var(--textcol);
+    width: 50%;
+    margin: auto;
+    padding: 1.5vh 1vw;
+}
+
+/* Submit page */
+.submitBox {
+    width: 50%;
+    padding-bottom: 2%;
+    background-color: hsla(40, 10%, 43%, 0.486);
+    margin: 0 auto;
+    border-radius: 40px;
+    border: 2px solid #22211f;
+
+    box-shadow: -20px -20px 0px #2c29259a;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+/* Wait div blocks input */
+#wait {
+    background-color: #ffffff00;
+    cursor: wait; 
+    height: 98vh; 
+    padding-right: 99vw; 
+    position: absolute; 
+    visibility: hidden;  
+    z-index: 10;
+}
+
+/* Checkbox */
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #923636;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #00000000;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgba(0, 0, 0, 0.158);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgba(0, 0, 0, 0.685);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 5px;
+    height: 10px;
+    border: solid #beb099;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  /* Passwrod text */
+  .PasswordText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #eyeball:hover {
+    cursor: pointer
+  }
+
+  #eyeball {
+    width: 20px;
+    height: auto;
+  }

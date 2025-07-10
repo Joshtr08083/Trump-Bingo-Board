@@ -1,0 +1,106 @@
+
+/* Box holding elements */
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+
+  row-gap: 2vh;
+}
+
+/* Board with target squares which tiles are dragged onto */
+.boardBox {
+  width: 30vw; 
+  height: 30vw; 
+  margin: auto; 
+  display: flex;
+  
+}
+
+#Board {
+  background-color: rgba(255, 255, 255, 0);
+  width:30vw;
+  height: 30vw;
+  padding-bottom: 0;
+
+  position: absolute;
+  z-index: 1;
+
+  border: 1px solid #352c2c;
+}
+
+.targetSquares {
+  background-color: #3f3f3f67;
+  position: absolute;
+  z-index: 2;
+
+  width: 20%;
+  height: 20%;
+  
+  border: 1px solid #818181;
+}
+
+/* Tiles and tiles grid for the draggable tiles */
+#tilesGridBox {
+  display: flex; 
+  align-content: start; 
+  flex-direction: column; 
+  padding-bottom: 5vh;
+}
+
+#tilesGrid {
+  position: relative;
+
+  display: grid;
+  gap: 6px;
+  row-gap: 6px;
+  justify-items: center;
+  align-items: center;
+}
+
+.tile {
+  width: 5.9vw;
+  height: 5.9vw;
+  border: 2px solid #000000;
+  
+  cursor: move;
+  z-index: 2;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+/* BINGO square in the middle */
+#BINGO {
+  background-color: #00000079;
+  color: #50505069;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  user-select: none;
+  -webkit-text-fill-color: #ffffff69;
+  -webkit-text-stroke: 0.8px;
+}
+
+/* Text in tiles */
+.tileText {
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 100%;
+  min-width: 0; 
+  flex: 1; 
+  padding: 5%;
+  font-size: 0.9em;
+}
+
+/* Buttons above board */
+.buttonMenu {
+  margin: 82% 105%; 
+  display: flex; 
+  flex-direction: column; 
+  row-gap: 0.5vh;
+}

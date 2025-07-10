@@ -1,0 +1,25 @@
+.title {
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+div.a {
+    position: relative;
+    font-size: 15;
+    text-align: center;
+    font-family: Courier;
+    padding-top: 3%;
+}
+
+div.b {
+    position: relative;
+    display: flex;
+    padding-top: 3%;
+    column-gap: 2vw;
+}

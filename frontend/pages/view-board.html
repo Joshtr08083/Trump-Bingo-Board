@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Board</title>
+    <link rel="stylesheet" href="/css/main.css?ver=2.3">
+    <link rel="stylesheet" href="/css/home.css?ver=2.3">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; row-gap: 10vh;">
+        <div style="border-radius: 5px; display: flex; flex-direction: row;">
+            <h1 class="text" id="title" style="text-align: center; font-size: 2em; color: #463e34; left: 50%; transform: translate(-50%, 0); position: relative;";>YOUR BOARD</h1>
+            <a href="/pages/homepage.html"><button class="button" style="position: absolute; transform: translate(0, 25%); right: 1%;" id="Logout">Back</button></a>
+        </div>
+
+        <div class="boardBox">
+            <div id = "Board"></div>
+        </div>
+    </div>
+
+    
+    <h1 class="text" style="text-align: center; font-size:1.5em;" id="name"></h1>
+
+    <script type="module" src="/scripts/server.js?ver=2.3"></script>
+    <script type="module" src="/scripts/view-board.js?ver=2.3">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create Board | Board</title>
+
+    <link rel = "stylesheet" href="/css/board.css?ver=2.3">
+    <link rel="stylesheet" href="/css/main.css?ver=2.3">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<div style="width:100%; display: flex; flex-direction: row;">
+    <h1 class="header" style="padding-left: 50px;">Create Your Board</h1>
+    <a href="/index.html"><button class="button" style="position: absolute; right: 1%">Back</button></a>
+</div>
+<p class="text" style="padding-left: 50px; line-height: 2em; margin: 0vh 0.5vw">Create your board by dragging the tiles.<br>Your board saves automatically,<br>only submit when finished</p>
+
+<div class="flexbox">
+    <div style="display: flex; column-gap: 1vw;">
+        <button class="button" id="reset">Reset</button>
+        <button class="button" id='submit'>Submit</button>
+    </div>
+
+    <div class="boardBox">
+        <div id = "Board"></div>
+    </div>
+    <div id="tilesGridBox">
+        <div id = "tilesGrid"></div>
+    </div>
+</div>
+
+<script type="module" src = "/scripts/server.js?ver=2.3"></script>
+<script type="module" src = "/scripts/create-board.js?ver=2.3"></script>
+
+</body>
+</html>

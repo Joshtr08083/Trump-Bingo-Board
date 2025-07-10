@@ -1,0 +1,115 @@
+#Board {
+    background-color: rgba(255, 255, 255, 0);
+    width:30vw;
+    height: 30vw;
+    padding-bottom: 0;
+  
+    position: absolute;
+    z-index: 1;
+  
+    border: 1px solid #352c2c;
+  }
+
+.targetSquares {
+    background-color: #3f3f3f67;
+    position: absolute;
+    z-index: 2;
+
+    width: 20%;
+    height: 20%;
+
+    border: 1px solid #818181;
+}
+
+.tile {
+    width: 5.9vw;
+    height: 5.9vw;
+    border: 2px solid #000000;
+
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-color: rgb(100, 83, 80);
+}
+
+#BINGO {
+    user-select: none;
+    background-color: #00000079;
+    color: #50505069;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+
+    -webkit-text-fill-color: #ffffff69;
+    -webkit-text-stroke: 0.8px;
+}
+
+.tileText {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    min-width: 0; 
+    flex: 1; 
+    padding: 0.5vw;
+}
+
+.boardBox {
+    width: 30vw; 
+    height: 30vw; 
+    margin: auto; 
+    display: flex;
+}
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+
+
+  }
+
+  .container > div {
+    padding: 5%;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    width: auto;
+  }
+
+  .boardImg {
+    width: 100%;
+  }
+
+  .boardImg:hover {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;   
+    border: 2px solid #76b1d8;
+    box-shadow: 0 0 10px #76b1d8;
+    cursor: pointer;
+  }
+
+  .userText {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 0.5em;
+    pointer-events: none;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 90%;
+  }

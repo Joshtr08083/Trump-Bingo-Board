@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is not a real project, it will not stay up, it was only for a joke. --> 
+<head>
+
+    <title>Bingo Board</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body style="background-color: #FFEBCD;">
+<p>Please wait...<br>you should be redirected...<br>If not, go <a href="/pages/guest.html">HERE</a></p>
+
+<script type="module" src="/scripts/server.js?ver=2.3"></script>
+<script type="module">
+    import { getJWT } from "./scripts/server.js?ver=2.3"
+
+    const verJWT = await getJWT()
+
+    if (verJWT[0] == true) {
+        console.log("Logged in!")
+        window.location.href = "/pages/homepage.html";
+    }
+    else {
+        window.location.href = "/pages/guest.html";
+    }
+</script>
+
+</body>
+</html>

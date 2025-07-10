@@ -1,0 +1,22 @@
+{
+	"name": "web-joshtr-worker",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.7.5",
+		"vitest": "~3.0.7",
+		"wrangler": "^4.0.0"
+	},
+	"dependencies": {
+		"@neondatabase/serverless": "^0.10.4",
+		"bcryptjs": "^3.0.2",
+		"dotenv": "^16.4.7",
+		"jsonwebtoken": "^9.0.2"
+	}
+}

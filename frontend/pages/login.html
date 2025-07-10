@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login | Board</title>
+
+    
+    <link rel="stylesheet" href="/css/main.css?ver=2.3">
+    <link rel="stylesheet" href="/css/form.css?ver=2.3">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- Invisible div -->
+<div id = "wait"></div> 
+
+<body>
+    <div style="display:flex">
+        <h1 class="header" style="font-size:45px; text-align:center; margin: 0.8% auto; padding-bottom: 2%;">LOGIN</h1>
+        <a href="/pages/guest.html"><button class="button" style="position: absolute; top: 2%; right:2%">Back</button></a>
+        
+    </div>
+    
+    <div class="loginBox">
+        <div style="padding-top:10%;"></div>
+
+        <p class="text" style="font-size: 1.2em"><b>Username:</b></p>
+        <input class = "input" id="username" type="text" id="uname" name="username" placeholder="Enter Your Username">
+        <div class="PasswordText">
+            <img src="/assets/vis-off.svg" id="eyeball"> &nbsp&nbsp
+            <p class="text" style="font-size: 1.2em"><b>Password:</b></p>
+        </div>
+        
+        <input class = "input" id="password" type="password" id="pass" name="password" placeholder="Enter Your Password">
+
+        <div style="padding-bottom:10%; padding-top: 5%; position: relative">
+            <div id="error" style="position: absolute; left: 50%; transform: translate(-50%, -50%);">
+                
+            </div>
+        </div>
+        
+        <button class="button" name="login" id="login">Login</button>
+    </div>
+
+    
+
+    </div>
+    <script type="module" src = "/scripts/loginPage.js?ver=2.3"></script>
+    <script type="module" src="/scripts/server.js?ver=2.3"></script>
+</body>
+</html>
